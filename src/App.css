@@ -12,3 +12,6 @@
   padding: 10px;
   color:white;
 }
+.play>button{
+  cursor:pointer;
+}
