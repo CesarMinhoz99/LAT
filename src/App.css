@@ -1,0 +1,14 @@
+.App{
+  background-color: #282c34;
+  height: 100vh;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title{
+  text-align: center;
+  padding: 10px;
+  color:white;
+}

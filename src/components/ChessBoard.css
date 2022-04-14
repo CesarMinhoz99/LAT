@@ -1,0 +1,43 @@
+:root {
+    --chessBoardSize: 50vh;
+}
+
+.ChessBoard {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: var(--chessBoardSize);
+    height: var(--chessBoardSize);
+}
+
+.squareWhite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: calc(var(--chessBoardSize)/8);
+    height: calc(var(--chessBoardSize)/8);
+    
+}
+
+.squareBlack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(233, 173, 44);
+    width: calc(var(--chessBoardSize)/8);
+    height: calc(var(--chessBoardSize)/8);
+}
+.squareWhite>div>img {
+    cursor: pointer;
+    width: calc(var(--chessBoardSize)*0.10);
+}
+.squareBlack>div>img {
+    cursor: pointer;
+    width: calc(var(--chessBoardSize)*0.10);
+
+}
+@media only screen and (max-width: 600px) {
+    :root {
+        --chessBoardSize: 200px;
+    }
+  }
